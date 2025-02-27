@@ -17,7 +17,12 @@ import cookieParser from 'cookie-parser';
 
 const app = express();
 dotenv.config();
-app.use(cors());
+app.use(cors(
+  {
+    origin:"http://localhost:5173",
+    credentials:true,
+  }
+));
 app.use(express.json());
 app.use(cookieParser());
 const PORT = 8000 || process.env.PORT;
@@ -51,6 +56,10 @@ app.use("/api/startups", startupRoutes);
 app.use("/api/investors", investorRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/startupsfilter",startupFilterRoute);
+
+app.get('/api',(req,res)=>{
+  res.send("Hello World");
+})
 
 
 const connectDB = async ()=>{
