@@ -24,6 +24,10 @@ import ContributorProfile from './pages/Contributor/ContributorProfile.jsx';
 import InvestorProfile from './pages/Investor/InvestorProfile.jsx';
 import StartupProfile from './pages/RibbonPage/StartupProfile.jsx';
 
+import { Provider } from 'react-redux';
+import store from "./store/store.js";
+import { AuthProvider } from './context/AuthProvider.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -96,8 +100,14 @@ const router = createBrowserRouter([
 ]);
 
 
-createRoot(document.getElementById('root')).render(
-  <RecoilRoot>
-    <RouterProvider router={router} />
-  </RecoilRoot>
-)
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <RecoilRoot>  {/* ✅ Wrap everything inside RecoilRoot */}
+      <Provider store={store}>
+        <AuthProvider>
+          <RouterProvider router={router} />
+        </AuthProvider>
+      </Provider>
+    </RecoilRoot>
+  </StrictMode>
+);
