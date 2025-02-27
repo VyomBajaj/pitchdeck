@@ -9,7 +9,8 @@ const InvestorSignup = () => {
         password: "",
         investmentStage: "",
         investmentAmount: "",
-        industries: ""
+        industries: "",
+        role : "investor"
     });
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
