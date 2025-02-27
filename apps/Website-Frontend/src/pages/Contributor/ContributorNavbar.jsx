@@ -2,7 +2,7 @@ import React from "react";
 import { FaUserCircle } from 'react-icons/fa';
 
 const UserNavBar = () => {
-  const hardcodedName = "Raghvi";
+  const hardcodedName = "Contributor";
 
   return (
     <nav className="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg backdrop-blur-md w-full">

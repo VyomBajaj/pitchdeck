@@ -23,6 +23,7 @@ const LoginPage = () => {
             const response = await axios.post("/api/auth/login", credentials);
             dispatch(loginUser(response.data.user)); // Store user in Redux
             alert("Login Successful!");
+            localStorage.setItem("user", JSON.stringify(response.data.user)); 
             console.log(response.data);
 
             // Redirecting based on user role

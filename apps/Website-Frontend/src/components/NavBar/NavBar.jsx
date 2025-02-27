@@ -11,7 +11,7 @@ const NavBar = () => {
         setUser(null);
         localStorage.removeItem("token"); 
         Cookies.remove("accessToken");
-        window.location.href = "/login"; 
+        window.location.href = "/"; 
     };
 
     return (
