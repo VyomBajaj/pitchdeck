@@ -17,6 +17,7 @@ import Chatbot from './pages/RibbonPage/Chatbot.jsx';
 import Community from './pages/User/CommunityPage.jsx';
 import FAQ from './pages/User/faq.jsx';
 import StudentStudentCommunity from './pages/User/s2s.jsx';
+import StartupProfile from './pages/RibbonPage/StartupProfile.jsx';
 
 
 const router = createBrowserRouter([
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
     path: "/communitypage",
     element: <Community />
   }
-  , 
+  ,
   {
     path: "/faq",
     element: <FAQ />
@@ -62,6 +63,11 @@ const router = createBrowserRouter([
   {
     path: "/s2s",
     element: <StudentStudentCommunity />
+  }
+  ,
+  {
+    path: "/startupprofile",
+    element: <StartupProfile />
   }
 ]);
 
