@@ -1,23 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import StartupNavbar from "../Startup/StartupNavbar";
 import { FaEye, FaThumbsUp, FaShareAlt } from "react-icons/fa";
 
-const pitchVideo = "https://youtu.be/ofK-RsVMNa0?si=c9pOroefEzqqXN7q";
-const videoStats = {
-  views: 200,
-  likes: 50,
-  shares: 30,
-};
-
-const investors = [
-  "Investor 1",
-  "Investor 2",
-  "Investor 3",
-  "Investor 4",
-  "Investor 5",
-];
+const pitchVideo = "https://youtu.be/LN2kwqnXY1M?si=B5977SqZeBrYtEod";
+const videoStats = { views: 200, likes: 50, shares: 30 };
 
 const StartupDashboard = () => {
+  const [investors, setInvestors] = useState([]); // Investor data state
+
+  useEffect(() => {
+    const fetchInvestors = async () => {
+      try {
+        const response = await axios.get("/api/getInvest/getInvestor"); // Backend API
+        setInvestors(response.data);
+      } catch (error) {
+        console.error("Error fetching investors:", error);
+      }
+    };
+
+    fetchInvestors();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-950 via-blue-900 to-blue-800 text-white">
       <StartupNavbar />
@@ -58,10 +62,14 @@ const StartupDashboard = () => {
 
         {/* Investors Section */}
         <div className="bg-blue-700 p-6 rounded-lg shadow-lg space-y-4">
-          <h2 className="text-xl font-bold text-center mb-4">Investors Who Viewed</h2>
-          {investors.map((investor, index) => (
-            <p key={index}>{investor}</p>
-          ))}
+          <h2 className="text-xl font-bold text-center mb-4">Investors Interested</h2>
+          {investors.length > 0 ? (
+            investors.map((investor, index) => (
+              <p key={index} className="text-white">{investor.name} ({investor.email})</p>
+            ))
+          ) : (
+            <p className="text-center">No Investors Found</p>
+          )}
           <div className="text-center mt-4">
             <button className="bg-yellow-500 px-6 py-2 rounded-lg hover:bg-yellow-400">
               Subscribe to Premium for Details
