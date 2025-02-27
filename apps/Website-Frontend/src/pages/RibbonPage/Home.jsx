@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaUserGraduate, FaChalkboardTeacher } from 'react-icons/fa';
 import { HiOutlineInformationCircle, HiOutlineMail } from 'react-icons/hi';
@@ -85,9 +85,21 @@ const Home = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg text-black w-96">
             <h2 className="text-2xl font-bold mb-4">We're here to help!</h2>
             <p className="mb-4">If you have any questions or need assistance, feel free to use our chat bot.</p>
-            <Link to="/chat" className="text-blue-600 hover:underline">
-              Click here for chat bot!
+            <Link
+              to="#"
+              className="text-blue-600 hover:underline"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://chatgpt.com/g/g-67c0a86a507c8191b5be931220b38502-pitchdeck-gpt", // Replace with your actual Custom GPT link
+                  "ChatBot",
+                  "width=400,height=500,left=100,top=100"
+                );
+              }}
+            >
+              Click here for our Personalized PitchDeck Gpt!
             </Link>
+
             <button
               onClick={togglePopup}
               className="mt-4 w-full py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg"

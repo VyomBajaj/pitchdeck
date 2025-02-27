@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar"; 
+import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/NavBar/Footer";
 
 const FAQ = () => {
@@ -41,7 +41,7 @@ const FAQ = () => {
               How does the matchmaking system work?
             </h2>
             <p className="mt-2 text-gray-700">
-              Our platform uses AI-based algorithms to match startups with suitable investors based on industry type, funding requirements, and compatibility scores.
+              Our platform uses smart algorithms to match startups with suitable investors based on industry type, funding requirements, and compatibility scores.
             </p>
           </div>
 
