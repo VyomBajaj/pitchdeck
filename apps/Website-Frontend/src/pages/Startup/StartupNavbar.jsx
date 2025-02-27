@@ -39,6 +39,11 @@ const UserNavBar = () => {
               FAQs
             </a>
           </li>
+          <li>
+            <a href="/startupdashboard" className="text-white font-medium hover:text-blue-300 transition duration-200">
+              Dashboard
+            </a>
+          </li>
         </ul>
 
         {/* User Profile */}

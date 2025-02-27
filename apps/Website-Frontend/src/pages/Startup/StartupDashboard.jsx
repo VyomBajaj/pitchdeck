@@ -3,7 +3,7 @@ import axios from "axios";
 import StartupNavbar from "../Startup/StartupNavbar";
 import { FaEye, FaThumbsUp, FaShareAlt } from "react-icons/fa";
 
-const pitchVideo = "https://youtu.be/LN2kwqnXY1M?si=B5977SqZeBrYtEod";
+const pitchVideo = "https://www.youtube.com/watch?v=dCFPK1bBdPw&pp=ygUbc3RhcnQgdXAgdmlkZW8gcHJlc2VudGF0aW9u";
 const videoStats = { views: 200, likes: 50, shares: 30 };
 
 const StartupDashboard = () => {
@@ -61,7 +61,7 @@ const StartupDashboard = () => {
         </div>
 
         {/* Investors Section */}
-        <div className="bg-blue-700 p-6 rounded-lg shadow-lg space-y-4">
+        <div className="bg-blue-700 p-6 rounded-lg shadow-lg space-y-4 text-center">
           <h2 className="text-xl font-bold text-center mb-4">Investors Interested</h2>
           {investors.length > 0 ? (
             investors.map((investor, index) => (

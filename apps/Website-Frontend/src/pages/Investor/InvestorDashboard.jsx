@@ -90,8 +90,8 @@ const InvestorDashboard = () => {
         </div>
 
         {/* Right Sidebar Top Investors & Startups */}
-        <div className="col-span-1 bg-blue-700 p-6 rounded-lg shadow-lg space-y-6">
-          <div>
+          <div className="col-span-1 bg-blue-700 p-6 rounded-lg shadow-lg space-y-6">
+            <div>
             <h2 className="text-xl font-bold mb-4">Top 10 Startups</h2>
             <ul className="space-y-2">
               {startups.length > 0 ? (
