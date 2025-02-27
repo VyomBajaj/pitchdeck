@@ -26,8 +26,9 @@ const LoginPage = () => {
             console.log(response.data);
 
             // Redirecting based on user role
-            if (response.data.role === "investor") navigate("/investor-dashboard");
-            else if (response.data.role === "startup") navigate("/startup-dashboard");
+            if (response.data.role === "investor") navigate("/investordashboard");
+            else if (response.data.role === "startup") navigate("/startupdashboard");
+            else if (response.data.role === "general") navigate("/contributordashboard");
             else navigate("/");
         } catch (error) {
             setErrorMessage(error.response?.data?.message || "Something went wrong");
