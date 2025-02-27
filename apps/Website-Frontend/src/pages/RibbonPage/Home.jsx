@@ -18,45 +18,52 @@ const Home = () => {
 
       {/* Hero Section */}
       <header className="flex flex-col items-center justify-center space-y-4 pt-32 text-center">
-        <h1 className="text-5xl md:text-6xl font-extrabold">Connect, Learn, Grow</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold">Welcome to PitchDeck</h1>
         <p className="text-lg md:text-xl text-blue-200 max-w-2xl">
-          Join MentorSync to find your perfect mentor or guide eager students on their learning journey.
+          Connecting Investors, Contributors, and Startups to shape the future.
         </p>
       </header>
 
-      {/* Mentor and Student Options */}
+      {/* Investor and Contributor Options */}
       <div className="mt-10 flex space-x-8">
         <Link
           to="/Signup"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaChalkboardTeacher className="text-5xl mb-3 text-blue-300" />
-          Become a Mentor
+          Become a Contributor
         </Link>
         <Link
-          to="/mentorlist"
+          to="/Signup"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaUserGraduate className="text-5xl mb-3 text-blue-300" />
-          Find a Mentor
+          Find an Investor
+        </Link>
+        <Link
+          to="/Signup"
+          className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
+        >
+          <FaChalkboardTeacher className="text-5xl mb-3 text-blue-300" />
+          Start Up Ventures
         </Link>
       </div>
 
       {/* Why Choose Us Section */}
       <section className="mt-16 max-w-screen-lg px-6 text-center space-y-8">
-        <h2 className="text-3xl font-bold text-blue-100">Why Choose MentorSync?</h2>
+        <h2 className="text-3xl font-bold text-blue-100">Why Choose PitchDeck?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex flex-col items-center bg-blue-600 p-4 rounded-lg shadow-md ">
             <FaChalkboardTeacher className="text-4xl text-blue-300 mb-2" />
-            <p className="text-blue-200">Expert Mentors</p>
+            <p className="text-blue-200">Expert Contributors</p>
           </div>
           <div className="flex flex-col items-center bg-blue-600 p-4 rounded-lg shadow-md ">
             <FaUserGraduate className="text-4xl text-blue-300 mb-2" />
-            <p className="text-blue-200">Tailored Guidance</p>
+            <p className="text-blue-200">Tailored Investment Opportunities</p>
           </div>
           <div className="flex flex-col items-center bg-blue-600 p-4 rounded-lg shadow-md ">
             <HiOutlineInformationCircle className="text-4xl text-blue-300 mb-2" />
-            <p className="text-blue-200">Build Connections</p>
+            <p className="text-blue-200">Collaborative Networking</p>
           </div>
         </div>
       </section>
@@ -93,7 +100,7 @@ const Home = () => {
 
       {/* Footer */}
       <footer className="mt-16 py-6 bg-blue-900 w-full text-center text-blue-300 text-sm">
-        © 2024 MentorSync. All rights reserved.
+        © 2025 PitchDeck. All rights reserved.
       </footer>
     </div>
   );

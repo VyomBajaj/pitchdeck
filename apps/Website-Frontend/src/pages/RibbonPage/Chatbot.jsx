@@ -59,7 +59,7 @@ const Chatbot = () => {
                 <div className="w-full max-w-2xl mx-auto mt-10 bg-blue-50 border border-blue-200 rounded-3xl shadow-2xl flex flex-col h-[85vh] overflow-hidden">
                     {/* Chat Header */}
                     <div className="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-5 rounded-t-3xl text-center font-extrabold text-2xl">
-                        MentorSync Chatbot
+                        PitchDeck Chatbot
                     </div>
 
                     {/* Chat Messages Area */}

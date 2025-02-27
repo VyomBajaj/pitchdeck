@@ -59,11 +59,7 @@ const NavBar = () => {
                             FAQs
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/blogpage" className="text-white font-medium hover:text-blue-300 transition duration-200">
-                            Blog
-                        </Link>
-                    </li>
+                    
                 </ul>
 
                 {/* User Profile or Login */}

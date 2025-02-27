@@ -19,7 +19,7 @@ const ContactUs = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -28,7 +28,7 @@ const ContactUs = () => {
                 },
                 body: JSON.stringify(formData),
             });
-    
+
             if (response.ok) {
                 console.log('Confirmation email sent');
                 alert('Thank you for contacting us! A confirmation email has been sent to your email address.');
@@ -40,7 +40,6 @@ const ContactUs = () => {
             console.error('Error:', error);
         }
     };
-    
 
     return (
         <>
@@ -51,11 +50,11 @@ const ContactUs = () => {
                         <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Contact Us</h2>
                         <div className="mb-8">
                             <h3 className="text-xl font-semibold text-blue-700 mb-4">Our Team</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
                                     <img src="/path/to/uday.jpg" alt="Uday Narwal" className="rounded-full w-24 h-24 mb-4" />
-                                    <h4 className="text-lg font-semibold text-blue-600">Uday Narwal</h4>
-                                    <p className="text-gray-700">Email: uday@example.com</p>
+                                    <h4 className="text-lg font-semibold text-blue-600">Parvej Alam</h4>
+                                    <p className="text-gray-700">Email: parvej@example.com</p>
                                     <p className="text-gray-700">Phone: (123) 456-7890</p>
                                 </div>
                                 <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
@@ -66,27 +65,15 @@ const ContactUs = () => {
                                 </div>
                                 <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
                                     <img src="/path/to/nishika.jpg" alt="Nishika Aggarwal" className="rounded-full w-24 h-24 mb-4" />
-                                    <h4 className="text-lg font-semibold text-blue-600">Nishika Aggarwal</h4>
-                                    <p className="text-gray-700">Email: nishika@example.com</p>
+                                    <h4 className="text-lg font-semibold text-blue-600">Vjom Bajaj</h4>
+                                    <p className="text-gray-700">Email: vyom@example.com</p>
                                     <p className="text-gray-700">Phone: (345) 678-9012</p>
                                 </div>
                                 <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
                                     <img src="/path/to/nancy.jpg" alt="Nancy Goel" className="rounded-full w-24 h-24 mb-4" />
-                                    <h4 className="text-lg font-semibold text-blue-600">Nancy Goel</h4>
-                                    <p className="text-gray-700">Email: nancy@example.com</p>
+                                    <h4 className="text-lg font-semibold text-blue-600">Vansh Gupta</h4>
+                                    <p className="text-gray-700">Email: abc@example.com</p>
                                     <p className="text-gray-700">Phone: (456) 789-0123</p>
-                                </div>
-                                <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
-                                    <img src="/path/to/suryansh.jpg" alt="Suryansh Rathore" className="rounded-full w-24 h-24 mb-4" />
-                                    <h4 className="text-lg font-semibold text-blue-600">Suryansh Rathore</h4>
-                                    <p className="text-gray-700">Email: suryansh@example.com</p>
-                                    <p className="text-gray-700">Phone: (567) 890-1234</p>
-                                </div>
-                                <div className="bg-gray-100 p-4 rounded-lg shadow-md flex flex-col items-center">
-                                    <img src="/path/to/piyush.jpg" alt="Piyush Raj" className="rounded-full w-24 h-24 mb-4" />
-                                    <h4 className="text-lg font-semibold text-blue-600">Piyush Raj</h4>
-                                    <p className="text-gray-700">Email: piyush@example.com</p>
-                                    <p className="text-gray-700">Phone: (678) 901-2345</p>
                                 </div>
                             </div>
                         </div>
