@@ -155,8 +155,9 @@ const UserSignUp = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="" disabled>Select User Role</option>
-              <option value="mentor">Mentor</option>
-              <option value="student">Student</option>
+              <option value="mentor">Investor</option>
+              <option value="student">Contributor</option>
+              <option value="student">StartUp</option>
             </select>
             <div className="overflow-y-auto max-h-48">
               <Tags

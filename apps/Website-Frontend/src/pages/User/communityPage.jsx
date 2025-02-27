@@ -14,34 +14,24 @@ const Community = () => {
       <header className="flex flex-col items-center justify-center space-y-4 pt-32 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold">Community</h1>
         <p className="text-lg md:text-xl text-blue-200 max-w-2xl">
-          Engage with peers, share knowledge, and connect with mentors in our vibrant student community.
+          Engage with other contributors, share knowledge, and connect in our vibrant contributor community.
         </p>
       </header>
 
       {/* Community Features */}
-      <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-lg px-6">
+      
         <Link
           to="/s2s"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaComments className="text-5xl mb-3 text-blue-300" />
-          Student - Student
+          Contributor Conversations
           <p className="text-sm text-blue-200 mt-2">
             Join conversations, ask questions, and help others in the forums.
           </p>
         </Link>
 
-        <Link
-          to="/s2m"
-          className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
-        >
-          <FaUsers className="text-5xl mb-3 text-blue-300" />
-          Student - Mentor
-          <p className="text-sm text-blue-200 mt-2">
-            Interact with experienced mentors to receive guidance and support.
-          </p>
-        </Link>
-      </section>
+    
 
       <Footer/>
     </div>

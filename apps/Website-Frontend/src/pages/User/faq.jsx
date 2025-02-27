@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar"; // Adjust the path based on your file structure
+import NavBar from "../../components/NavBar/NavBar"; 
 import Footer from "../../components/NavBar/Footer";
 
 const FAQ = () => {
@@ -18,119 +18,100 @@ const FAQ = () => {
           {/* Question 1 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              What is Mentorsync?
+              What is PitchDeck?
             </h2>
             <p className="mt-2 text-gray-700">
-              Mentorsync is a platform designed to sync students with mentors in
-              their field of interest, providing guidance, support, and valuable
-              insights to help them achieve their goals.
+              PitchDeck is an intelligent matchmaking platform that connects startups with potential investors based on their business needs, funding stage, and industry domain.
             </p>
           </div>
 
           {/* Question 2 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              How do I become a mentor?
+              How do I register as a startup or investor?
             </h2>
             <p className="mt-2 text-gray-700">
-              To become a mentor, you can sign up on our platform and complete
-              your profile. Once your profile is reviewed and approved, you can
-              start mentoring students.
+              You can sign up on our platform by filling out the registration form and providing details about your startup or investment preferences. Once verified, you can start exploring matches.
             </p>
           </div>
 
           {/* Question 3 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              Is there a fee for using Mentorsync?
+              How does the matchmaking system work?
             </h2>
             <p className="mt-2 text-gray-700">
-              Mentorsync offers both free and paid mentorship options. Mentors
-              set their own rates for paid sessions, and students can choose
-              according to their budget.
+              Our platform uses AI-based algorithms to match startups with suitable investors based on industry type, funding requirements, and compatibility scores.
             </p>
           </div>
 
           {/* Question 4 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              How do I schedule a meeting with a mentor?
+              Is there a fee for using PitchDeck?
             </h2>
             <p className="mt-2 text-gray-700">
-              You can schedule a meeting by visiting the mentor's profile and
-              selecting an available time slot that suits you. Our platform will
-              automatically manage the scheduling process.
+              Basic features are free, but we offer premium subscriptions for advanced features like personalized matchmaking and priority access to investors.
             </p>
           </div>
 
-          {/* New Question 5 */}
+          {/* Question 5 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              How is my data kept secure on Mentorsync?
+              How secure is my data?
             </h2>
             <p className="mt-2 text-gray-700">
-              We prioritize the security and privacy of our users. All data is
-              encrypted and we follow strict data protection protocols to ensure
-              your information is safe.
+              Your data is encrypted and stored securely, following industry-standard security protocols to ensure maximum privacy and confidentiality.
             </p>
           </div>
 
-          {/* New Question 6 */}
+          {/* Question 6 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              What if I need to cancel or reschedule a session?
+              Can I communicate with investors before scheduling a meeting?
             </h2>
             <p className="mt-2 text-gray-700">
-              You can cancel or reschedule a session from your dashboard. Please
-              note that our refund policy may apply depending on the timing of
-              your cancellation.
+              Yes, the platform allows startups to initiate conversations with investors through chat before scheduling a formal meeting.
             </p>
           </div>
 
-          {/* New Question 7 */}
+          {/* Question 7 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              What are the benefits of becoming a mentor?
+              How are meetings conducted on the platform?
             </h2>
             <p className="mt-2 text-gray-700">
-              Becoming a mentor allows you to share your expertise, help shape
-              the careers of upcoming professionals, and earn income. It's also
-              a great way to give back to the community.
+              Meetings are conducted through our integrated video conferencing feature, where both parties can discuss business opportunities in real time.
             </p>
           </div>
 
-          {/* New Question 8 */}
+          {/* Question 8 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              How do I choose the right mentor for me?
+              Can I cancel or reschedule a meeting?
             </h2>
             <p className="mt-2 text-gray-700">
-              You can browse mentor profiles, read reviews, and view their areas
-              of expertise to find the right mentor that fits your needs and
-              goals.
+              Yes, meetings can be canceled or rescheduled through your dashboard. Please refer to our cancellation policy for further details.
             </p>
           </div>
 
-          {/* New Question 9 */}
+          {/* Question 9 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              Can I contact a mentor before booking a session?
+              How can I review investors or startups?
             </h2>
             <p className="mt-2 text-gray-700">
-              Yes, you can send a message to a mentor to discuss your needs and
-              see if they are the right fit for you before booking a session.
+              Both startups and investors can leave feedback and ratings after each meeting, helping others make informed decisions.
             </p>
           </div>
 
-          {/* New Question 10 */}
+          {/* Question 10 */}
           <div>
             <h2 className="text-2xl font-semibold text-blue-800">
-              How does the rating system work?
+              What happens if no suitable matches are found?
             </h2>
             <p className="mt-2 text-gray-700">
-              After each session, mentees can rate their experience with the
-              mentor. The ratings are averaged to provide an overall rating for
-              each mentor, helping other users make informed choices.
+              If no matches are found, our system will notify you when new investors or startups are available that align with your preferences.
             </p>
           </div>
         </div>
