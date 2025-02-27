@@ -31,8 +31,8 @@ const NavBar = () => {
                     {isLoading ? (
                         <span className="text-white">Loading...</span> 
                     ) : !user ? (
-                        <Link to="/Signup" className="text-white font-medium hover:text-blue-300 transition duration-200">
-                            Login/SignUp
+                        <Link to="/login" className="text-white font-medium hover:text-blue-300 transition duration-200">
+                            Login
                         </Link>
                     ) : (
                         <div className="flex items-center space-x-4">

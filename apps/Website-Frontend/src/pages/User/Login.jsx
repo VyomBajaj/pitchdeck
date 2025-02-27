@@ -82,9 +82,6 @@ const LoginPage = () => {
                         ) : 'Login'}
                     </button>
                 </form>
-                <div className="mt-4 text-sm text-center">
-                    <p className="text-gray-600">Don't have an account? <a href="/Signup" className="text-blue-500 hover:underline">Sign Up</a></p>
-                </div>
             </div>
         </div>
     );
