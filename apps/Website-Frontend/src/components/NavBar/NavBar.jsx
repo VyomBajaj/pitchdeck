@@ -29,7 +29,7 @@ const NavBar = () => {
             <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4">
                 {/* Logo or Brand Name */}
                 <div className="text-white text-2xl font-bold">
-                    MentorSync
+                    PitchDeck
                 </div>
 
                 {/* Navigation Links */}
