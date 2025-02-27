@@ -238,7 +238,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const SignUpPage = () => {
+const ContributorSignup = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -275,4 +275,4 @@ const SignUpPage = () => {
     );
 };
 
-export default SignUpPage;
+export default ContributorSignup;
