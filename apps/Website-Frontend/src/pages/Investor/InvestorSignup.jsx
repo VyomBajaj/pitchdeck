@@ -9,8 +9,7 @@ const InvestorSignup = () => {
         password: "",
         investmentStage: "",
         investmentAmount: "",
-        industries: "",
-        role : "investor"
+        industries: ""
     });
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
@@ -25,7 +24,7 @@ const InvestorSignup = () => {
         setLoading(true);
         setErrorMessage("");
         try {
-            const response = await axios.post("/api/users/signup", formData);
+            const response = await axios.post("/api/investors/signup", formData);
             alert(response.data.message);
             navigate("/investordashboard");
         } catch (error) {

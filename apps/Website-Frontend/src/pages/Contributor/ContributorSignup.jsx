@@ -5,8 +5,7 @@ const ContributorSignup = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        password: "",
-        role: "general"
+        password: ""
     });
 
     // Input change handler
