@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import './index.css'
-import UserLogin from './pages/User/Login.jsx';
 import { RecoilRoot } from 'recoil';
 import UserProfile from "./pages/User/UserProfile.jsx"
 import About from './pages/RibbonPage/About.jsx';
@@ -23,10 +22,12 @@ import StartupDashboard from './pages/Startup/StartupDashboard.jsx';
 import ContributorProfile from './pages/Contributor/ContributorProfile.jsx';
 import InvestorProfile from './pages/Investor/InvestorProfile.jsx';
 import StartupProfile from './pages/RibbonPage/StartupProfile.jsx';
-
+import StartupPrediction from './pages/Startup/StartupPrediction.jsx';
+import UserLogin from './pages/User/Login.jsx';
 import { Provider } from 'react-redux';
 import store from "./store/store.js";
 import { AuthProvider } from './context/AuthProvider.jsx';
+import InvestorSignup from './pages/Investor/InvestorSignup.jsx';
 
 const router = createBrowserRouter([
   {
@@ -93,8 +94,16 @@ const router = createBrowserRouter([
     element:<InvestorProfile/>
   },
   {
-    path:"/startup_profile",
+    path:"/view_startup_profile",
     element:<StartupProfile/>
+  },
+  {
+    path:"/startup_prediction",
+    element:<StartupPrediction/>
+  },
+  {
+    path:"/investorsignup",
+    element:<InvestorSignup/>
   }
 
 ]);

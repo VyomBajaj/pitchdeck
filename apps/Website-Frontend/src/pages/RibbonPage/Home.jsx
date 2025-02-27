@@ -34,7 +34,7 @@ const Home = () => {
           Become a Contributor
         </Link>
         <Link
-          to="/Signup"
+          to="/investorsignup"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaUserGraduate className="text-5xl mb-3 text-blue-300" />
