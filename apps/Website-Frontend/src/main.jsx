@@ -22,6 +22,7 @@ import InvestorDashboard from './pages/Investor/InvestorDashboard.jsx';
 import StartupDashboard from './pages/Startup/StartupDashboard.jsx';
 import ContributorProfile from './pages/Contributor/ContributorProfile.jsx';
 import InvestorProfile from './pages/Investor/InvestorProfile.jsx';
+import StartupProfile from './pages/RibbonPage/StartupProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
   {
     path:"/view_investor_profile",
     element:<InvestorProfile/>
+  },
+  {
+    path:"/startup_profile",
+    element:<StartupProfile/>
   }
 
 ]);
