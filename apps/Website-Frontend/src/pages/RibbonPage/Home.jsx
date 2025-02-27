@@ -27,7 +27,7 @@ const Home = () => {
       {/* Investor and Contributor Options */}
       <div className="mt-10 flex space-x-8">
         <Link
-          to="/Signup"
+          to="/contributorsignup"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaChalkboardTeacher className="text-5xl mb-3 text-blue-300" />
@@ -41,7 +41,7 @@ const Home = () => {
           Find an Investor
         </Link>
         <Link
-          to="/Signup"
+          to="/startupsignup"
           className="flex flex-col items-center p-6 bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg text-lg font-medium transition transform hover:scale-105"
         >
           <FaChalkboardTeacher className="text-5xl mb-3 text-blue-300" />
