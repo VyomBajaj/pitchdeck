@@ -17,6 +17,8 @@ const dataBar = [
   { name: "Apr", Startups: 40 },
 ];
 
+
+
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const ContributorDashboard = () => {

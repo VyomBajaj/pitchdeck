@@ -13,6 +13,8 @@ import {socketAuth} from './middlewares/socketMiddleware.js';
 import chatRoute from './routes/chatRoute.js';
 import messageRoute from './routes/messageRoute.js';
 import cookieParser from 'cookie-parser';
+import getStartupRouter from './routes/getStartups.route.js';
+import getInvestorRouter from './routes/getInvestor.route.js';
 
 
 const app = express();
@@ -56,6 +58,8 @@ app.use("/api/startups", startupRoutes);
 app.use("/api/investors", investorRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/startupsfilter",startupFilterRoute);
+app.use('/api/getStart',getStartupRouter);
+app.use('/api/getInvest',getInvestorRouter);
 
 app.get('/api',(req,res)=>{
   res.send("Hello World");

@@ -11,14 +11,15 @@ export const signupInvestor = async (req, res) => {
     if (user) return res.status(400).json({ message: "User already exists" });
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    user = await User.create({ name, email, password: hashedPassword, role: "investor" });
+    const newUser = await User.create({ name, email, password: hashedPassword, role: "investor" });
 
     const investor = await Investor.create({
-      user: user._id,
+      user: newUser._id,
       investmentStage,
       investmentAmount,
       industries,
     });
+
 
     res.status(201).json({ message: "Investor registered successfully", investorId: investor._id });
   } catch (error) {
