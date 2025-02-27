@@ -83,7 +83,7 @@ const StudentCommunityPage = () => {
 
             {/* Title */}
             <div className="text-center py-6 bg-blue-600 text-white">
-                <h1 className="text-4xl font-bold">Student Community</h1>
+                <h1 className="text-4xl font-bold">PitchDeck Community</h1>
             </div>
 
             <div className="max-w-4xl mx-auto p-4">
