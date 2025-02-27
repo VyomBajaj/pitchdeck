@@ -72,7 +72,7 @@ export const login = async (req, res) => {
     // Set Cookie and Send Response
     res.cookie("jwtToken", token, cookieOptions)
       .status(200)
-      .json({ message: "Login Successful", userId: user._id, role: user.role });
+      .json({ message: "Login Successful", user:user});
   } catch (error) {
     res.status(500).json({ message: "Server Error", error });
   }
