@@ -50,9 +50,9 @@ const ContributorDashboard = () => {
         {/* Carousel for Startups */}
         <div className="col-span-2 flex flex-col items-center justify-center space-y-6">
           <div className="bg-blue-600 p-10 rounded-lg shadow-lg w-3/4 text-center">
-            <img src="https://via.placeholder.com/150" alt="Startup Thumbnail" className="mx-auto mb-4 rounded-lg" />
-            <h2 className="text-2xl font-bold mb-4">Startup Name</h2>
-            <p className="mb-6">Brief Description about the startup...</p>
+            <img src="https://altiusinvestech.com/blog/wp-content/uploads/2021/09/startup-blog-1.jpg" alt="Startup Thumbnail" className="mx-auto mb-4 rounded-lg" />
+            <h2 className="text-2xl font-bold mb-4">TechNovers</h2>
+            <p className="mb-6">This is a tech related startup. It has been for a while in the news.</p>
             <div className="flex justify-around">
               <button className="bg-green-500 p-4 rounded-full hover:bg-green-400">
                 <FaThumbsUp size={30} />
