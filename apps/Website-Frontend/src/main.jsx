@@ -68,8 +68,26 @@ const router = createBrowserRouter([
     element: <StudentStudentCommunity />
   },
   {
-
+    path:"/contributordashboard",
+    element:<ContributorDashboard/>
+  },
+  {
+    path:"/investordashboard",
+    element:<InvestorDashboard/>
+  },
+  {
+    path:"/startupdashboard",
+    element:<StartupDashboard/>
+  },
+  {
+    path:"/view_contributor_profile",
+    element:<ContributorProfile/>
+  },
+  {
+    path:"/view_investor_profile",
+    element:<InvestorProfile/>
   }
+
 ]);
 
 
