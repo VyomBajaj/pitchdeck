@@ -9,8 +9,7 @@ const StartupSignup = () => {
         industry: "",
         stage: "",
         fundingGoal: "",
-        description: "",
-        role : "startup"
+        description: ""
     });
 
     // Input change handler
@@ -24,7 +23,7 @@ const StartupSignup = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("/api/users/signup", formData);
+            const response = await axios.post("/api/startups/signup", formData);
             alert(response.data.message);
         } catch (error) {
             console.error("Error:", error.response?.data?.message || "Something went wrong");
