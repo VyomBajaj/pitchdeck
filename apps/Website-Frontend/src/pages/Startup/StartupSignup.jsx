@@ -9,7 +9,8 @@ const StartupSignup = () => {
         industry: "",
         stage: "",
         fundingGoal: "",
-        description: ""
+        description: "",
+        role : "startup"
     });
 
     // Input change handler
