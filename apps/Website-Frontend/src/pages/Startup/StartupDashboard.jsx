@@ -71,10 +71,13 @@ const StartupDashboard = () => {
             <p className="text-center">No Investors Found</p>
           )}
           <div className="text-center mt-4">
-            <button className="bg-yellow-500 px-6 py-2 rounded-lg hover:bg-yellow-400">
-              Subscribe to Premium for Details
-            </button>
-          </div>
+  <a href="/startup_prediction">
+    <button className="bg-yellow-500 px-6 py-2 rounded-lg hover:bg-yellow-400">
+      Subscribe to Premium for Details
+    </button>
+  </a>
+</div>
+
         </div>
       </div>
 
