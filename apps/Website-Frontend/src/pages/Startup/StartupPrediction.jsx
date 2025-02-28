@@ -5,8 +5,8 @@ export default function StartupPrediction() {
 
   const handlePredict = () => {
     // Hardcoded input values
-    const location = 3;  // Example Location
-    const market = 5;    // Example Market
+    const location = "Delhi";  // Example Location
+    const market = "AI";    // Example Market
     const totalRaised = 1000000;  // Example Total Raised
     const employees = 30;  // Example Employees
     const fundingPerEmployee = totalRaised / employees;
@@ -23,9 +23,9 @@ export default function StartupPrediction() {
         <h2 className="text-center text-2xl font-bold mb-6">Startup Funding Prediction</h2>
         <div className="space-y-4">
           <label>Location</label>
-          <input placeholder="Location" defaultValue="3" className="w-full p-3 rounded-lg bg-blue-700 text-white placeholder-white border border-blue-400" />
+          <input placeholder="Location" defaultValue="Delhi" className="w-full p-3 rounded-lg bg-blue-700 text-white placeholder-white border border-blue-400" />
           <label>Market</label>
-          <input placeholder="Market" defaultValue="5" className="w-full p-3 rounded-lg bg-blue-700 text-white placeholder-white border border-blue-400" />
+          <input placeholder="Market" defaultValue="AI" className="w-full p-3 rounded-lg bg-blue-700 text-white placeholder-white border border-blue-400" />
           <label>Total Raised ($)</label>
           <input placeholder="Total Raised ($)" defaultValue="1000000" className="w-full p-3 rounded-lg bg-blue-700 text-white placeholder-white border border-blue-400" />
           <label>Employees</label>
